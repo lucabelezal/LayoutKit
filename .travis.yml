@@ -69,5 +69,4 @@ jobs:
           overwrite: true
           on:
             tags: true
-            all_branches: true
             repo: viniciusfranca/LayoutKit
