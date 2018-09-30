@@ -4,7 +4,8 @@ branches:
   only:
     - master
     - develop
-    - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
+    - /^\d+\.\d+(\.\d+)?(-\S*)?$/
+    
 cache:
   directories:
     - $HOME/Library/Caches/org.carthage.CarthageKit/dependencies
@@ -15,7 +16,7 @@ before_install:
   - bundle install --path vendor/bundle
   - gem install xcpretty
   - brew update
-  - brew outdated carthage || brew upgrade carthage
+  - brew outdated carthage || brew upgrade carthage 
 
 env:
   global:
@@ -67,5 +68,6 @@ jobs:
           skip_cleanup: true
           overwrite: true
           on:
-            repo: viniciusfranca/LayoutKit
             tags: true
+            all_branches: true
+            repo: viniciusfranca/LayoutKit
