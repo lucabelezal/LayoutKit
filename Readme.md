@@ -7,9 +7,6 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/LayoutKit.svg)](https://cocoapods.org/pods/LayoutKit)
 
-[![Travis](https://img.shields.io/travis/viniciusfranca/LayoutKit/master.svg)](https://travis-ci.org/viniciusfranca/LayoutKit/branches)
-[![SwiftFrameworkTemplate](https://img.shields.io/badge/SwiftFramework-Template-red.svg)](http://github.com/RahulKatariya/SwiftFrameworkTemplate)
-
 LayoutKit is a DSL to make Auto Layout easy iOS
 
 - [Requirements](#requirements)
@@ -19,8 +16,9 @@ LayoutKit is a DSL to make Auto Layout easy iOS
 
 ## Requirements
 
-- iOS 8.0+ / Mac OS X 10.10+ / tvOS 9.0+ / watchOS 2.0+
+- iOS 9.0+
 - Xcode 10.0+
+- Swift 4.2+
 
 ## Installation
 
@@ -38,7 +36,7 @@ To integrate LayoutKit into your Xcode project using CocoaPods, specify it in yo
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, '9.0'
 use_frameworks!
 
 pod 'LayoutKit', '~> 1.0.0'
@@ -151,10 +149,6 @@ $ git submodule update --init --recursive
 ## Contributing
 
 Issues and pull requests are welcome!
-
-## Author
-
-Vinicius França [@ ](https://twitter.com/ )
 
 ## License
 

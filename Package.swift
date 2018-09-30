@@ -25,6 +25,6 @@ let package = Package(
         .testTarget(
             name: "LayoutKitTests",
             dependencies: ["LayoutKit"],
-            path: "Tests")
+            path: "Tests"),
     ]
 )

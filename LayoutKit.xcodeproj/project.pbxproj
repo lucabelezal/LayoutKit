@@ -7,32 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00DB8C1521613E3400C203EF /* LayoutConstraintSafeAreaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB8C0521613E3300C203EF /* LayoutConstraintSafeAreaItem.swift */; };
+		00DB8C1621613E3400C203EF /* LayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB8C0621613E3300C203EF /* LayoutView.swift */; };
+		00DB8C1721613E3400C203EF /* LayoutViewConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB8C0721613E3300C203EF /* LayoutViewConstraint.swift */; };
+		00DB8C1821613E3400C203EF /* LayoutConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB8C0821613E3300C203EF /* LayoutConstraintMakerExtendable.swift */; };
+		00DB8C1921613E3400C203EF /* LayoutConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB8C0A21613E3300C203EF /* LayoutConstraintMakerRelatable.swift */; };
+		00DB8C1A21613E3400C203EF /* LayoutConstraintItemable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB8C0B21613E3300C203EF /* LayoutConstraintItemable.swift */; };
+		00DB8C1B21613E3400C203EF /* LayoutViewConstraintSafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB8C0C21613E3300C203EF /* LayoutViewConstraintSafeArea.swift */; };
+		00DB8C1C21613E3400C203EF /* LayoutConstraintType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB8C0E21613E3300C203EF /* LayoutConstraintType.swift */; };
+		00DB8C1D21613E3400C203EF /* LayoutEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB8C0F21613E3300C203EF /* LayoutEdgeInsets.swift */; };
+		00DB8C1E21613E3400C203EF /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB8C1021613E3300C203EF /* Typealiases.swift */; };
+		00DB8C1F21613E3400C203EF /* LayoutPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB8C1121613E3300C203EF /* LayoutPriortizable.swift */; };
+		00DB8C2021613E3400C203EF /* LayoutConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB8C1221613E3300C203EF /* LayoutConstraintMaker.swift */; };
+		00DB8C2121613E3400C203EF /* LayoutConstraintMakerSupportable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB8C1321613E3400C203EF /* LayoutConstraintMakerSupportable.swift */; };
+		00DB8C2221613E3400C203EF /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB8C1421613E3400C203EF /* LayoutConstraintItem.swift */; };
 		3549BB501DA38A2000C63030 /* LayoutKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3549BB181DA3890B00C63030 /* LayoutKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3549BB511DA38A2000C63030 /* LayoutKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3549BB181DA3890B00C63030 /* LayoutKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3549BB521DA38A2100C63030 /* LayoutKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3549BB181DA3890B00C63030 /* LayoutKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3549BB531DA38A2200C63030 /* LayoutKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3549BB181DA3890B00C63030 /* LayoutKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3549BB661DA38ADB00C63030 /* LayoutKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3549BB211DA389CD00C63030 /* LayoutKit.framework */; };
-		3549BB751DA38AEF00C63030 /* LayoutKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3549BB481DA389F300C63030 /* LayoutKit.framework */; };
-		3549BB841DA38B0000C63030 /* LayoutKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3549BB3B1DA389E800C63030 /* LayoutKit.framework */; };
-		3549BB8B1DA38C0A00C63030 /* LayoutKitSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3549BB8A1DA38C0A00C63030 /* LayoutKitSpec.swift */; };
-		3549BB8C1DA38C0A00C63030 /* LayoutKitSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3549BB8A1DA38C0A00C63030 /* LayoutKitSpec.swift */; };
-		3549BB8D1DA38C0A00C63030 /* LayoutKitSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3549BB8A1DA38C0A00C63030 /* LayoutKitSpec.swift */; };
-		354AD5861F8A659800B18FAE /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354AD5841F8A659800B18FAE /* Quick.framework */; };
-		354AD5871F8A659800B18FAE /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354AD5851F8A659800B18FAE /* Nimble.framework */; };
-		354AD5881F8A65B500B18FAE /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 354AD5851F8A659800B18FAE /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		354AD5891F8A65B500B18FAE /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 354AD5841F8A659800B18FAE /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		359649031FB18CC000FC7ADC /* LayoutKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359649021FB18CBF00FC7ADC /* LayoutKit.swift */; };
-		359649041FB18CC000FC7ADC /* LayoutKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359649021FB18CBF00FC7ADC /* LayoutKit.swift */; };
-		359649051FB18CC000FC7ADC /* LayoutKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359649021FB18CBF00FC7ADC /* LayoutKit.swift */; };
-		359649061FB18CC000FC7ADC /* LayoutKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359649021FB18CBF00FC7ADC /* LayoutKit.swift */; };
 		35B7422F1F82A5E000829B21 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35B7422D1F82A5DF00829B21 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		35B742301F82A5E000829B21 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35B7422E1F82A5E000829B21 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		35B742311F82A5EC00829B21 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B7422D1F82A5DF00829B21 /* Nimble.framework */; };
 		35B742321F82A5EC00829B21 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B7422E1F82A5E000829B21 /* Quick.framework */; };
-		35B742361F82A61E00829B21 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35B742341F82A61D00829B21 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		35B742371F82A61E00829B21 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35B742351F82A61E00829B21 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		35B742381F82A62900829B21 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B742341F82A61D00829B21 /* Nimble.framework */; };
-		35B742391F82A62900829B21 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B742351F82A61E00829B21 /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,20 +36,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3549BB201DA389CD00C63030;
 			remoteInfo = "LayoutKit-iOS";
-		};
-		3549BB761DA38AEF00C63030 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3549BAFC1DA387DB00C63030 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3549BB471DA389F300C63030;
-			remoteInfo = "LayoutKit-tvOS";
-		};
-		3549BB851DA38B0000C63030 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3549BAFC1DA387DB00C63030 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3549BB3A1DA389E800C63030;
-			remoteInfo = "LayoutKit-macOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -72,49 +52,31 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		35B742331F82A60600829B21 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				35B742361F82A61E00829B21 /* Nimble.framework in Embed Frameworks */,
-				35B742371F82A61E00829B21 /* Quick.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		35B7423A1F82A63600829B21 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				354AD5881F8A65B500B18FAE /* Nimble.framework in Embed Frameworks */,
-				354AD5891F8A65B500B18FAE /* Quick.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		00DB8C0521613E3300C203EF /* LayoutConstraintSafeAreaItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintSafeAreaItem.swift; sourceTree = "<group>"; };
+		00DB8C0621613E3300C203EF /* LayoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutView.swift; sourceTree = "<group>"; };
+		00DB8C0721613E3300C203EF /* LayoutViewConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutViewConstraint.swift; sourceTree = "<group>"; };
+		00DB8C0821613E3300C203EF /* LayoutConstraintMakerExtendable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		00DB8C0A21613E3300C203EF /* LayoutConstraintMakerRelatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		00DB8C0B21613E3300C203EF /* LayoutConstraintItemable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintItemable.swift; sourceTree = "<group>"; };
+		00DB8C0C21613E3300C203EF /* LayoutViewConstraintSafeArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutViewConstraintSafeArea.swift; sourceTree = "<group>"; };
+		00DB8C0E21613E3300C203EF /* LayoutConstraintType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintType.swift; sourceTree = "<group>"; };
+		00DB8C0F21613E3300C203EF /* LayoutEdgeInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutEdgeInsets.swift; sourceTree = "<group>"; };
+		00DB8C1021613E3300C203EF /* Typealiases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
+		00DB8C1121613E3300C203EF /* LayoutPriortizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutPriortizable.swift; sourceTree = "<group>"; };
+		00DB8C1221613E3300C203EF /* LayoutConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintMaker.swift; sourceTree = "<group>"; };
+		00DB8C1321613E3400C203EF /* LayoutConstraintMakerSupportable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintMakerSupportable.swift; sourceTree = "<group>"; };
+		00DB8C1421613E3400C203EF /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		3549BB171DA3890B00C63030 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3549BB181DA3890B00C63030 /* LayoutKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutKit.h; sourceTree = "<group>"; };
 		3549BB211DA389CD00C63030 /* LayoutKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LayoutKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3549BB2E1DA389DB00C63030 /* LayoutKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LayoutKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3549BB3B1DA389E800C63030 /* LayoutKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LayoutKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3549BB481DA389F300C63030 /* LayoutKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LayoutKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3549BB551DA38A5E00C63030 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		3549BB571DA38A8800C63030 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		3549BB581DA38A8800C63030 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3549BB611DA38ADB00C63030 /* LayoutKitTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LayoutKitTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3549BB701DA38AEF00C63030 /* LayoutKitTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LayoutKitTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3549BB7F1DA38B0000C63030 /* LayoutKitTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LayoutKitTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3549BB8A1DA38C0A00C63030 /* LayoutKitSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutKitSpec.swift; sourceTree = "<group>"; };
 		354AD5841F8A659800B18FAE /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/tvOS/Quick.framework; sourceTree = "<group>"; };
 		354AD5851F8A659800B18FAE /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/tvOS/Nimble.framework; sourceTree = "<group>"; };
-		359649021FB18CBF00FC7ADC /* LayoutKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutKit.swift; sourceTree = "<group>"; };
 		35B7422D1F82A5DF00829B21 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		35B7422E1F82A5E000829B21 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		35B742341F82A61D00829B21 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
@@ -123,27 +85,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		3549BB1D1DA389CD00C63030 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB2A1DA389DB00C63030 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB371DA389E800C63030 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB441DA389F300C63030 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -160,29 +101,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3549BB6D1DA38AEF00C63030 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				354AD5861F8A659800B18FAE /* Quick.framework in Frameworks */,
-				354AD5871F8A659800B18FAE /* Nimble.framework in Frameworks */,
-				3549BB751DA38AEF00C63030 /* LayoutKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB7C1DA38B0000C63030 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				35B742381F82A62900829B21 /* Nimble.framework in Frameworks */,
-				35B742391F82A62900829B21 /* Quick.framework in Frameworks */,
-				3549BB841DA38B0000C63030 /* LayoutKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00DB8C0921613E3300C203EF /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				00DB8C0A21613E3300C203EF /* LayoutConstraintMakerRelatable.swift */,
+				00DB8C0B21613E3300C203EF /* LayoutConstraintItemable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		00DB8C0D21613E3300C203EF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				00DB8C0E21613E3300C203EF /* LayoutConstraintType.swift */,
+				00DB8C0F21613E3300C203EF /* LayoutEdgeInsets.swift */,
+				00DB8C1021613E3300C203EF /* Typealiases.swift */,
+				00DB8C1121613E3300C203EF /* LayoutPriortizable.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		3549BAFB1DA387DB00C63030 = {
 			isa = PBXGroup;
 			children = (
@@ -197,12 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				3549BB211DA389CD00C63030 /* LayoutKit.framework */,
-				3549BB2E1DA389DB00C63030 /* LayoutKit.framework */,
-				3549BB3B1DA389E800C63030 /* LayoutKit.framework */,
-				3549BB481DA389F300C63030 /* LayoutKit.framework */,
 				3549BB611DA38ADB00C63030 /* LayoutKitTests-iOS.xctest */,
-				3549BB701DA38AEF00C63030 /* LayoutKitTests-tvOS.xctest */,
-				3549BB7F1DA38B0000C63030 /* LayoutKitTests-macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -219,7 +155,6 @@
 		3549BB191DA3890B00C63030 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				3549BB8A1DA38C0A00C63030 /* LayoutKitSpec.swift */,
 				3549BB5B1DA38A8C00C63030 /* Supporting Files */,
 			);
 			path = Tests;
@@ -230,7 +165,6 @@
 			children = (
 				3549BB181DA3890B00C63030 /* LayoutKit.h */,
 				3549BB171DA3890B00C63030 /* Info.plist */,
-				3549BB551DA38A5E00C63030 /* Info-tvOS.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -260,7 +194,16 @@
 		359649011FB18CBF00FC7ADC /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				359649021FB18CBF00FC7ADC /* LayoutKit.swift */,
+				00DB8C0D21613E3300C203EF /* Helper */,
+				00DB8C0921613E3300C203EF /* Protocol */,
+				00DB8C0621613E3300C203EF /* LayoutView.swift */,
+				00DB8C0721613E3300C203EF /* LayoutViewConstraint.swift */,
+				00DB8C1421613E3400C203EF /* LayoutConstraintItem.swift */,
+				00DB8C1221613E3300C203EF /* LayoutConstraintMaker.swift */,
+				00DB8C0C21613E3300C203EF /* LayoutViewConstraintSafeArea.swift */,
+				00DB8C0521613E3300C203EF /* LayoutConstraintSafeAreaItem.swift */,
+				00DB8C0821613E3300C203EF /* LayoutConstraintMakerExtendable.swift */,
+				00DB8C1321613E3400C203EF /* LayoutConstraintMakerSupportable.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -276,30 +219,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3549BB2B1DA389DB00C63030 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3549BB521DA38A2100C63030 /* LayoutKit.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB381DA389E800C63030 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3549BB531DA38A2200C63030 /* LayoutKit.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB451DA389F300C63030 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3549BB511DA38A2000C63030 /* LayoutKit.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -311,6 +230,7 @@
 				3549BB1D1DA389CD00C63030 /* Frameworks */,
 				3549BB1E1DA389CD00C63030 /* Headers */,
 				3549BB1F1DA389CD00C63030 /* Resources */,
+				00DB8C252161404900C203EF /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -319,60 +239,6 @@
 			name = "LayoutKit-iOS";
 			productName = "LayoutKit-iOS";
 			productReference = 3549BB211DA389CD00C63030 /* LayoutKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		3549BB2D1DA389DB00C63030 /* LayoutKit-watchOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3549BB331DA389DB00C63030 /* Build configuration list for PBXNativeTarget "LayoutKit-watchOS" */;
-			buildPhases = (
-				3549BB291DA389DB00C63030 /* Sources */,
-				3549BB2A1DA389DB00C63030 /* Frameworks */,
-				3549BB2B1DA389DB00C63030 /* Headers */,
-				3549BB2C1DA389DB00C63030 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "LayoutKit-watchOS";
-			productName = "LayoutKit-watchOS";
-			productReference = 3549BB2E1DA389DB00C63030 /* LayoutKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		3549BB3A1DA389E800C63030 /* LayoutKit-macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3549BB401DA389E800C63030 /* Build configuration list for PBXNativeTarget "LayoutKit-macOS" */;
-			buildPhases = (
-				3549BB361DA389E800C63030 /* Sources */,
-				3549BB371DA389E800C63030 /* Frameworks */,
-				3549BB381DA389E800C63030 /* Headers */,
-				3549BB391DA389E800C63030 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "LayoutKit-macOS";
-			productName = "LayoutKit-macOS";
-			productReference = 3549BB3B1DA389E800C63030 /* LayoutKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		3549BB471DA389F300C63030 /* LayoutKit-tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3549BB4D1DA389F300C63030 /* Build configuration list for PBXNativeTarget "LayoutKit-tvOS" */;
-			buildPhases = (
-				3549BB431DA389F300C63030 /* Sources */,
-				3549BB441DA389F300C63030 /* Frameworks */,
-				3549BB451DA389F300C63030 /* Headers */,
-				3549BB461DA389F300C63030 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "LayoutKit-tvOS";
-			productName = "LayoutKit-tvOS";
-			productReference = 3549BB481DA389F300C63030 /* LayoutKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		3549BB601DA38ADB00C63030 /* LayoutKitTests-iOS */ = {
@@ -394,44 +260,6 @@
 			productReference = 3549BB611DA38ADB00C63030 /* LayoutKitTests-iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3549BB6F1DA38AEF00C63030 /* LayoutKitTests-tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3549BB781DA38AEF00C63030 /* Build configuration list for PBXNativeTarget "LayoutKitTests-tvOS" */;
-			buildPhases = (
-				3549BB6C1DA38AEF00C63030 /* Sources */,
-				3549BB6D1DA38AEF00C63030 /* Frameworks */,
-				3549BB6E1DA38AEF00C63030 /* Resources */,
-				35B7423A1F82A63600829B21 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3549BB771DA38AEF00C63030 /* PBXTargetDependency */,
-			);
-			name = "LayoutKitTests-tvOS";
-			productName = "LayoutKitTests-tvOS";
-			productReference = 3549BB701DA38AEF00C63030 /* LayoutKitTests-tvOS.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		3549BB7E1DA38B0000C63030 /* LayoutKitTests-macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3549BB871DA38B0000C63030 /* Build configuration list for PBXNativeTarget "LayoutKitTests-macOS" */;
-			buildPhases = (
-				3549BB7B1DA38B0000C63030 /* Sources */,
-				3549BB7C1DA38B0000C63030 /* Frameworks */,
-				3549BB7D1DA38B0000C63030 /* Resources */,
-				35B742331F82A60600829B21 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3549BB861DA38B0000C63030 /* PBXTargetDependency */,
-			);
-			name = "LayoutKitTests-macOS";
-			productName = "LayoutKitTests-macOS";
-			productReference = 3549BB7F1DA38B0000C63030 /* LayoutKitTests-macOS.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -444,37 +272,12 @@
 				TargetAttributes = {
 					3549BB201DA389CD00C63030 = {
 						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = "";
-						ProvisioningStyle = Automatic;
-					};
-					3549BB2D1DA389DB00C63030 = {
-						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = "";
-						ProvisioningStyle = Automatic;
-					};
-					3549BB3A1DA389E800C63030 = {
-						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 0900;
-						ProvisioningStyle = Automatic;
-					};
-					3549BB471DA389F300C63030 = {
-						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					3549BB601DA38ADB00C63030 = {
 						CreatedOnToolsVersion = 8.0;
 						LastSwiftMigration = "";
-						ProvisioningStyle = Automatic;
-					};
-					3549BB6F1DA38AEF00C63030 = {
-						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 0900;
-						ProvisioningStyle = Automatic;
-					};
-					3549BB7E1DA38B0000C63030 = {
-						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -493,38 +296,12 @@
 			targets = (
 				3549BB201DA389CD00C63030 /* LayoutKit-iOS */,
 				3549BB601DA38ADB00C63030 /* LayoutKitTests-iOS */,
-				3549BB3A1DA389E800C63030 /* LayoutKit-macOS */,
-				3549BB7E1DA38B0000C63030 /* LayoutKitTests-macOS */,
-				3549BB471DA389F300C63030 /* LayoutKit-tvOS */,
-				3549BB6F1DA38AEF00C63030 /* LayoutKitTests-tvOS */,
-				3549BB2D1DA389DB00C63030 /* LayoutKit-watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3549BB1F1DA389CD00C63030 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB2C1DA389DB00C63030 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB391DA389E800C63030 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB461DA389F300C63030 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -538,52 +315,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3549BB6E1DA38AEF00C63030 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB7D1DA38B0000C63030 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DB8C252161404900C203EF /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3549BB1C1DA389CD00C63030 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				359649031FB18CC000FC7ADC /* LayoutKit.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB291DA389DB00C63030 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				359649061FB18CC000FC7ADC /* LayoutKit.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB361DA389E800C63030 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				359649041FB18CC000FC7ADC /* LayoutKit.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB431DA389F300C63030 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				359649051FB18CC000FC7ADC /* LayoutKit.swift in Sources */,
+				00DB8C2121613E3400C203EF /* LayoutConstraintMakerSupportable.swift in Sources */,
+				00DB8C1921613E3400C203EF /* LayoutConstraintMakerRelatable.swift in Sources */,
+				00DB8C1D21613E3400C203EF /* LayoutEdgeInsets.swift in Sources */,
+				00DB8C1E21613E3400C203EF /* Typealiases.swift in Sources */,
+				00DB8C1721613E3400C203EF /* LayoutViewConstraint.swift in Sources */,
+				00DB8C1C21613E3400C203EF /* LayoutConstraintType.swift in Sources */,
+				00DB8C1621613E3400C203EF /* LayoutView.swift in Sources */,
+				00DB8C1F21613E3400C203EF /* LayoutPriortizable.swift in Sources */,
+				00DB8C1A21613E3400C203EF /* LayoutConstraintItemable.swift in Sources */,
+				00DB8C2221613E3400C203EF /* LayoutConstraintItem.swift in Sources */,
+				00DB8C1521613E3400C203EF /* LayoutConstraintSafeAreaItem.swift in Sources */,
+				00DB8C2021613E3400C203EF /* LayoutConstraintMaker.swift in Sources */,
+				00DB8C1821613E3400C203EF /* LayoutConstraintMakerExtendable.swift in Sources */,
+				00DB8C1B21613E3400C203EF /* LayoutViewConstraintSafeArea.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,23 +364,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3549BB8B1DA38C0A00C63030 /* LayoutKitSpec.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB6C1DA38AEF00C63030 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3549BB8D1DA38C0A00C63030 /* LayoutKitSpec.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB7B1DA38B0000C63030 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3549BB8C1DA38C0A00C63030 /* LayoutKitSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,16 +374,6 @@
 			isa = PBXTargetDependency;
 			target = 3549BB201DA389CD00C63030 /* LayoutKit-iOS */;
 			targetProxy = 3549BB671DA38ADB00C63030 /* PBXContainerItemProxy */;
-		};
-		3549BB771DA38AEF00C63030 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3549BB471DA389F300C63030 /* LayoutKit-tvOS */;
-			targetProxy = 3549BB761DA38AEF00C63030 /* PBXContainerItemProxy */;
-		};
-		3549BB861DA38B0000C63030 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3549BB3A1DA389E800C63030 /* LayoutKit-macOS */;
-			targetProxy = 3549BB851DA38B0000C63030 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -766,11 +512,12 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.viniciusfranca.layoutkit.LayoutKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.viniciusfranca.LayoutKit;
 				PRODUCT_NAME = LayoutKit;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -787,141 +534,11 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.viniciusfranca.layoutkit.LayoutKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.viniciusfranca.LayoutKit;
 				PRODUCT_NAME = LayoutKit;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
-			};
-			name = Release;
-		};
-		3549BB341DA389DB00C63030 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.viniciusfranca.layoutkit.LayoutKit;
-				PRODUCT_NAME = LayoutKit;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		3549BB351DA389DB00C63030 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.viniciusfranca.layoutkit.LayoutKit;
-				PRODUCT_NAME = LayoutKit;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		3549BB411DA389E800C63030 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.viniciusfranca.layoutkit.LayoutKit;
-				PRODUCT_NAME = LayoutKit;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		3549BB421DA389E800C63030 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.viniciusfranca.layoutkit.LayoutKit;
-				PRODUCT_NAME = LayoutKit;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		3549BB4E1DA389F300C63030 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Sources/Info-tvOS.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.viniciusfranca.layoutkit.LayoutKit;
-				PRODUCT_NAME = LayoutKit;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-			};
-			name = Debug;
-		};
-		3549BB4F1DA389F300C63030 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Sources/Info-tvOS.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.viniciusfranca.layoutkit.LayoutKit;
-				PRODUCT_NAME = LayoutKit;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -960,82 +577,6 @@
 			};
 			name = Release;
 		};
-		3549BB791DA38AEF00C63030 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
-				INFOPLIST_FILE = "Tests/Info-tvOS.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.viniciusfranca.layoutkit.LayoutKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-			};
-			name = Debug;
-		};
-		3549BB7A1DA38AEF00C63030 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
-				INFOPLIST_FILE = "Tests/Info-tvOS.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.viniciusfranca.layoutkit.LayoutKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-			};
-			name = Release;
-		};
-		3549BB881DA38B0000C63030 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.viniciusfranca.layoutkit.LayoutKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		3549BB891DA38B0000C63030 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.viniciusfranca.layoutkit.LayoutKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1057,56 +598,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3549BB331DA389DB00C63030 /* Build configuration list for PBXNativeTarget "LayoutKit-watchOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3549BB341DA389DB00C63030 /* Debug */,
-				3549BB351DA389DB00C63030 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3549BB401DA389E800C63030 /* Build configuration list for PBXNativeTarget "LayoutKit-macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3549BB411DA389E800C63030 /* Debug */,
-				3549BB421DA389E800C63030 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3549BB4D1DA389F300C63030 /* Build configuration list for PBXNativeTarget "LayoutKit-tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3549BB4E1DA389F300C63030 /* Debug */,
-				3549BB4F1DA389F300C63030 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		3549BB691DA38ADB00C63030 /* Build configuration list for PBXNativeTarget "LayoutKitTests-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3549BB6A1DA38ADB00C63030 /* Debug */,
 				3549BB6B1DA38ADB00C63030 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3549BB781DA38AEF00C63030 /* Build configuration list for PBXNativeTarget "LayoutKitTests-tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3549BB791DA38AEF00C63030 /* Debug */,
-				3549BB7A1DA38AEF00C63030 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3549BB871DA38B0000C63030 /* Build configuration list for PBXNativeTarget "LayoutKitTests-macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3549BB881DA38B0000C63030 /* Debug */,
-				3549BB891DA38B0000C63030 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
