@@ -77,19 +77,11 @@ jobs:
       deploy:
         - provider: releases 
           api_key:
-            secure: # https://docs.travis-ci.com/user/deployment/releases/
+            secure: ZIFBzloz2+MCxcfs/t+LQxZHL5FjDItnSIE+j/wPGWfY8k94w2Y+Knh3AKQBho8WNhhzzXNtOvj8MQhoKzoqjhGK2Ajf1QGMAMf6DVnVq/z590X8UZK5X7wVHrD2V9LB29en04cfO5t6ifZ6RyMySFKWihYxF+E4qJNiAZxyHqkLgczzWu7AWmh8A1fqU4UrKA2Xrl8FOTZICEltvME2/gtSH74J/dWjm3WVZRZEsanxYVZwy0lD9g142t1zu6L+1t+Vcfi3p873DFFKiPxC3A7feZZJ3Ki2mpq6Dx0QGr5kTQpwNVd2QsttTPkURo6oAyD04Yyyt60cefptgsevd0QTraSYQz0W0jdSQ40Q7V5syltQDovLf80ZmzHStbBA+orFK/RfLiIgMyjjSxUDEUSl25D/vuylMBQyRUnto9l5TVLPGD3h0OoASnHexzu7dXG9/4IWThig+uqNq4dC4jaHv1aPDoTa62S04cYkSrqbysloz+yV/YQ674yhwNQf1SKUsnxoxLSkyuzjhrn51oN1W8yXqO6btjBwVy4neb133H5kTXYAyZqSdrY/hdaV5e+6CFmprauxZAQQmZ6Yqne+VsN6asPCBu06HuUw4hab3Rvwh7x6FGMT9PHu18/lDYiXs6h4pItIDHgIkzj7M83EDdq5UlJwImq9mvmQlGg=
           file:
             - LayoutKit.framework.zip
           skip_cleanup: true
           overwrite: true
           on:
             repo: viniciusfranca/LayoutKit
-            tags: true
-    - stage: Deploy Cocoapods
-      script: skip
-      deploy:
-        - provider: script # https://fuller.li/posts/automated-cocoapods-releases-with-ci/
-          script: bundle exec pod trunk push
-          skip_cleanup: true
-          on:
             tags: true
