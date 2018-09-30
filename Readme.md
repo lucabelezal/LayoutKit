@@ -19,7 +19,7 @@ LayoutKit is a DSL to make Auto Layout easy iOS
 
 ## Installation
 
-### CocoaPods
+### CocoaPods - Coming Soon 😔
 
 [CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
 
