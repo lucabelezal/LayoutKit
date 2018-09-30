@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
  s.name = 'LayoutKit'
- s.version = '1.0.0'
+ s.version = '1.0.2'
  s.license = { :type => "MIT", :file => "LICENSE" }
  s.summary = 'LayoutKit is a DSL to make Auto Layout easy iOS'
  s.homepage = 'https://github.com/viniciusfranca/LayoutKit'
