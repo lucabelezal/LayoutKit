@@ -6,15 +6,33 @@
 //  Copyright © 2018 Vinicius França. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-public enum LayoutPriortizable: Float {
-    case low = 250.0
-    case medium = 500.0
-    case high = 750.0
-    case required = 999.0
+public enum LayoutPriortizable {
+    case low
+    case medium
+    case high
+    case required
+    case value(Float)
+}
 
-    internal var priorityValue: LayoutPriority {
-        return LayoutPriority(rawValue: self.rawValue)
+extension LayoutPriortizable {
+
+    internal var priorityValue: UILayoutPriority {
+
+        var priorityValue: Float = 0.0
+        switch self {
+        case .low:
+            priorityValue = 250.0
+        case .medium:
+            priorityValue = 500.0
+        case .high:
+            priorityValue = 750.0
+        case .required:
+            priorityValue = 999.0
+        case .value(let priority):
+            priorityValue = priority
+        }
+        return UILayoutPriority(rawValue: priorityValue)
     }
 }

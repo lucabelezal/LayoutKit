@@ -233,7 +233,6 @@ extension LayoutConstraintMakerExtendable: LayoutConstraintMakerRelatable {
         default:
             fatalError("Layout attribute not implemented")
         }
-        constantAnchor?.priority = LayoutPriority(rawValue: 999)
         constantAnchor?.isActive = true
         return LayoutConstraintMakerSupportable(constant: constantAnchor)
     }
@@ -257,7 +256,6 @@ extension LayoutConstraintMakerExtendable: LayoutConstraintMakerRelatable {
         default:
             fatalError("Layout attribute not implemented")
         }
-        constantAnchor?.priority = LayoutPriority(rawValue: 999)
         constantAnchor?.isActive = true
         return LayoutConstraintMakerSupportable(constant: constantAnchor)
     }

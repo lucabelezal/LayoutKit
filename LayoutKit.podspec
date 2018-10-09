@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
  s.homepage = 'https://github.com/viniciusfranca/LayoutKit'
  s.authors = { "Vinicius França" => "viniciusdasilva10@hotmail.com" }
  s.source = { :git => "https://github.com/viniciusfranca/LayoutKit.git", :tag => s.version.to_s }
- s.platforms = { :ios => "9.0" }
+ s.platforms = { :ios => "10.0" }
  s.requires_arc = true
 
  s.default_subspec = "Core"
