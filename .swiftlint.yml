@@ -1,8 +1,11 @@
 reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit)
 
 excluded: # paths to ignore during linting. Takes precedence over `included`.
-  - Pods
   - Carthage
+  - fastlane
+  - scripts
+  - vendor
+  - LayoutKit
   - Tests
 
 # If you need help with rules run $ swiftlint 
@@ -54,8 +57,8 @@ file_length:
   error: 400
 
 line_length: 
-  warning: 160 
-  error: 180
+  warning: 230 
+  error: 250
   ignores_comments: true
   ignores_urls: true
 
