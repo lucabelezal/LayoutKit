@@ -10,7 +10,6 @@ import UIKit
 
 public typealias LayoutConstraint = NSLayoutConstraint
 internal typealias LayoutAttribute = NSLayoutConstraint.Attribute
-internal typealias LayoutPriority = UILayoutPriority
 internal typealias LayoutGuide = UILayoutGuide
 internal typealias LayoutView = UIView
 
