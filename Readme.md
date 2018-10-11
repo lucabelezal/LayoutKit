@@ -3,7 +3,6 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/LayoutKit.svg)](https://cocoapods.org/pods/LayoutKit)
 [![Travis](https://img.shields.io/travis/viniciusfranca/LayoutKit/master.svg)](https://travis-ci.org/viniciusfranca/LayoutKit/branches)
-[![Coverage Status](https://coveralls.io/repos/github/viniciusfranca/LayoutKit/badge.svg?branch=master)](https://coveralls.io/github/viniciusfranca/LayoutKit?branch=master)
 
 LayoutKit is a DSL to make Auto Layout easy iOS
 

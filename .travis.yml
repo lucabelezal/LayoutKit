@@ -21,7 +21,7 @@ env:
   - LANG=en_US.UTF-8
   - WORKSPACE=LayoutKit.xcworkspace
   - IOS_FRAMEWORK_SCHEME="LayoutKit-iOS"
-  - secure: FxzDwQaJkgk3mAQ+ZxTF05GYGb04Cm1S0uKhmlxze2nxfkqQUwDkmqt5JtP0LXLM7KGYdgpgZJFvfHOHWztIDCYeroO9pEVxi9P/vVZ9/d3aB/SFHsG3JQ9+mJbxYT6C6PwE/pOUUKJd/I7r7/3cbLzFn9jKZ1pATyPCM8IyXfhcxHGa6zp/tkrJRzvdSXdsPr78kqc0uitJ8u3pbziToBlSenULq/jcBJQZvjN0S+JmnmwPdkHkAKBW5HnVpJU7o6TKrLL0PDukAfn+PbAO2x1hwBkYtUZ/3205W94oLhHIeDbcwZurwd6EpZDyrLIbKbB+gHFQUfA25QPIFl7fi0kU70ggFDLF3RUdMhSxn+hQSAW3YUgOHWhr9CspELbnfBaHdgi9LmuUd+jP1KsK2KdfMcMcoHyqLJQLiXkZ2F77sY0ptr9spWAHqh/0dBnjijZemuSAti2EIO7UFeId3m6GoNvbWHPNeAivH5TYO+nDH8mXDHDhrW4hry/4zmTOX2RCy3oVEiPCjPss1Xi7saZZYCL/WC/zwLDObs8fIzl4BswFCPOf86qKWUeQGykFxOHyCLs10vT/B8+J2eAg32LxgwuRIet4P4XP9O0n72kM3PeaHdpQ6bL7ESnKbU29IokVKwjSI0fA3tPFZJSXy4uLYCmSM/1YwL5pf0IX7nQ=
+  - secure: PZOmimpiRJa/fiyWjxh78+4Yz8I/AUWDlg1oQWemXqb2YtovfRlPpopTua+2Jx4MFl1OgAS+FI8+vBP775QtAcTQMMo7ROpljDFMAy0/vBTAR/J0dJwQu5ZXvKyxQV6+9GNZ5LVtHzsJdYF36xVdF5mqSjasoeLGrs6fAeCROZcw1fdOaaUAVY4ApcEMraKnat+l/1bVwuTeAvzro2gkNaZg/3ieVK2IPhIEDOZGW2xETSTQZeM/1EZnTCRi4mrGhiwJenIOfuSs8UbHWKx0+OLa7QlRC4RMUak2bA7bWzDkT7haxpFocpG0pblEzj2OXvq1h2b9Ngi5SxRLuQF+IG1lt5uFWUHxQ9bvEXdG9/WgmM3/XxcqPgcxB3aL+KKgxmaEg0ohH9iOd9lNBfbYJJW9z/m6E+Srb6WkwR3LauhKCt/xf3H+d8Xjqzx/MqnASNAZLd5mjKXZPsMWmiSiCpPHNH/fL9L0yQd6MnNoZtRXPE/svb4LYMDmkwQuaGmg+xuVW11fAeH2S3D+XRn7Slh/AytsquhL2OhUOVGHD4j58quAPZnNThLoP9ey6tN+wpZANkdGUDnv1YXhYFa2ddbP67oP55Ua9weaTdg7UN8NNEjcK0Juwjo21yLm49b4PNeorPtw7UqooGV/aby2/0jOHx0dATz8UaGGVFd45o4=
   matrix:
   - DESTINATION="OS=12.0,name=iPhone XS"                  SCHEME="$IOS_FRAMEWORK_SCHEME"     RUN_TESTS="YES"
   - DESTINATION="OS=11.4,name=iPhone X"                   SCHEME="$IOS_FRAMEWORK_SCHEME"     RUN_TESTS="YES"
@@ -41,6 +41,9 @@ script:
   -destination "$DESTINATION" -configuration Release ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES
   test | xcpretty -c; else xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -destination
   "$DESTINATION" -configuration Release ONLY_ACTIVE_ARCH=NO build | xcpretty -c; fi
+- if [ $RUN_TESTS == "YES" ]; then xcodebuild -scheme "$SCHEME" -workspace "$WORKSPACE" -sdk iphonesimulator -destination "$DESTINATION" build test; fi
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -J "$SCHEME"
 jobs:
   include:
   - stage: Deploy Github
