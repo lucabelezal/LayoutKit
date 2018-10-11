@@ -41,9 +41,8 @@ script:
   -destination "$DESTINATION" -configuration Release ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES
   test | xcpretty -c; else xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -destination
   "$DESTINATION" -configuration Release ONLY_ACTIVE_ARCH=NO build | xcpretty -c; fi
-- if [ $RUN_TESTS == "YES" ]; then xcodebuild -scheme "$SCHEME" -workspace "$WORKSPACE" -sdk iphonesimulator -destination "$DESTINATION" build test; fi
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -J "$SCHEME"
+  - bash <(curl -s https://codecov.io/bash) -J "LayoutKit-iOS"
 jobs:
   include:
   - stage: Deploy Github
