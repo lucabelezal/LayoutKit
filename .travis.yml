@@ -15,6 +15,11 @@ before_install:
 - gem install xcpretty
 - brew update
 - brew outdated carthage || brew upgrade carthage
+- brew install python3
+- pip3 install python-coveralls
+- pip3 install codecov;
+- gem install xcov --no-ri --no-rdoc --no-document
+- gem update fastlane --no-ri --no-rdoc --no-document
 env:
   global:
   - LC_CTYPE=en_US.UTF-8
@@ -41,7 +46,9 @@ script:
   -destination "$DESTINATION" -configuration Release ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES
   test | xcpretty -c; else xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -destination
   "$DESTINATION" -configuration Release ONLY_ACTIVE_ARCH=NO build | xcpretty -c; fi
+- fastlane/travis/script.sh
 after_success:
+  - fastlane/travis/after_success_script.sh
   - bash <(curl -s https://codecov.io/bash) -J "LayoutKit-iOS"
 jobs:
   include:
