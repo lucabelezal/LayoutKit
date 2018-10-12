@@ -38,7 +38,7 @@ lane :test do
 
 end
 
-lane :report_teste_coverage do
+lane :report_test_coverage do
     
     desc "Run Tests"
     xcov(
