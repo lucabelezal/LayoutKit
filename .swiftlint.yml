@@ -44,6 +44,9 @@ opt_in_rules:
 disabled_rules: # rule identifiers to exclude from running
   - missing_docs
   
+cyclomatic_complexity:
+  ignores_case_statements: true
+  
 function_body_length:
   warning: 80
   error: 100

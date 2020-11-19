@@ -11,6 +11,7 @@ public class LayoutConstraintMakerExtendable {
         self.attribute = attribute
     }
 
+    // swiftlint:disable:next cyclomatic_complexity
     internal func configureView(
         _ constraintType: LayoutConstraintType,
         constant: CGFloat,
