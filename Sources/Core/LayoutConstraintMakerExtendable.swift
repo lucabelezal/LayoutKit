@@ -1,11 +1,3 @@
-//
-//  LayoutConstraintMakerExtendable.swift
-//  LayoutKit
-//
-//  Created by Vinicius França on 29/09/18.
-//  Copyright © 2018 Vinicius França. All rights reserved.
-//
-
 import CoreGraphics
 import Foundation
 
@@ -19,7 +11,11 @@ public class LayoutConstraintMakerExtendable {
         self.attribute = attribute
     }
 
-    internal func configureView(_ constraintType: LayoutConstraintType, constant: CGFloat, layout: LayoutConstraintItemable) -> LayoutConstraint {
+    internal func configureView(
+        _ constraintType: LayoutConstraintType,
+        constant: CGFloat,
+        layout: LayoutConstraintItemable
+    ) -> LayoutConstraint {
 
         guard let layoutConfiguration = layout as? LayoutConstraintItemConfigurable else {
             fatalError("LayoutItem not implement LayoutConstraintItemConfigurable")
@@ -259,5 +255,4 @@ extension LayoutConstraintMakerExtendable: LayoutConstraintMakerRelatable {
         constantAnchor?.isActive = true
         return LayoutConstraintMakerSupportable(constant: constantAnchor)
     }
-
 }

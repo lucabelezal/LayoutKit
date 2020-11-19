@@ -1,11 +1,3 @@
-//
-//  LayoutConstraintItem.swift
-//  LayoutKit
-//
-//  Created by Vinicius França on 29/09/18.
-//  Copyright © 2018 Vinicius França. All rights reserved.
-//
-
 import Foundation
 
 public class LayoutConstraintItem: LayoutConstraintItemable, LayoutConstraintItemConfigurable {
@@ -19,5 +11,4 @@ public class LayoutConstraintItem: LayoutConstraintItemable, LayoutConstraintIte
         self.attribute = attribute
         self.isSafeArea = false
     }
-
 }

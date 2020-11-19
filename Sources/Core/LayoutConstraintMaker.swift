@@ -1,25 +1,14 @@
-//
-//  LayoutConstraintMaker.swift
-//  LayoutKit
-//
-//  Created by Vinicius França on 29/09/18.
-//  Copyright © 2018 Vinicius França. All rights reserved.
-//
-
 import Foundation
 
 public class LayoutConstraintMaker {
-
     internal let view: LayoutView
 
     internal required init(view: LayoutView) {
         self.view = view
     }
-
 }
 
 public extension LayoutConstraintMaker {
-
     var left: LayoutConstraintMakerExtendable {
         return LayoutConstraintMakerExtendable(view: view, attribute: .left)
     }
@@ -59,5 +48,4 @@ public extension LayoutConstraintMaker {
     var trailing: LayoutConstraintMakerExtendable {
         return LayoutConstraintMakerExtendable(view: view, attribute: .trailing)
     }
-
 }
