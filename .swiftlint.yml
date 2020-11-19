@@ -44,10 +44,6 @@ opt_in_rules:
 disabled_rules: # rule identifiers to exclude from running
   - missing_docs
   
-cyclomatic_complexity:
-  warning: 35
-  error: 40
-
 function_body_length:
   warning: 80
   error: 100
